@@ -1,0 +1,129 @@
+*, * ::before, *::after{
+    box-sizing: border-box;
+    margin: 0; 
+    padding: 0;
+}
+
+body {
+    background: url("326532-Sepik.jpg") center no-repeat black;
+    background-size: cover;
+    width: 1024px;
+
+    margin: 0 auto;
+    padding: 2vh;
+}
+body div{
+    border: 3px solid red;
+    border-radius: 15px;
+    padding: 2em;
+    max-width: 600px;
+    margin:10px auto;
+    background-color:lightgray;
+}
+
+
+h1{
+    color:red;
+    text-align: center; 
+}
+
+h1 span {
+    color: green;
+}
+
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+ul li {
+    flex: 0 0 33%;
+    margin-top: 0.5em;
+}
+
+fieldset{
+    
+    border-color: green;
+    border-radius: 10px;
+    padding: 1em;
+    
+}
+
+fieldset legend{
+
+    font-weight: bold;
+    font-size: 1rem;
+    padding-right: 2rem;
+}
+
+form p label{
+    display: block;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"]{
+    width:300%;
+
+}
+
+textarea{
+    width: 100%;
+    border-radius: 10px;
+    border-color: black;
+    background-color:lightgray;
+}
+textarea{
+    resize: none;
+}
+
+input[type="submit"]{
+
+    margin:10px;
+    display:flex;
+    width: 10em;
+    align-content: flex-end;
+    background-color: cyan;
+}
+
+input{
+    background-color:lightgray;
+    border-color: black;
+    border-radius: 10px;
+}
+
+input:required{
+    background-color: lightgreen;
+}
+
+input:invalid{
+    background-color:rgb(253, 137, 91);
+}
+
+fieldset:nth-child(4){
+    border: none;
+    display: flex;
+}
+
+fieldset:nth-child(5){
+    border: none;
+}
+
+header h1, span{
+    display: flex;
+    flex-direction: column;
+}
+
+form:invalid input[type="submit"] {
+    background-color: red;
+    cursor: not-allowed;
+}
+
+input[type="text"]:nth-last-child(2){
+    width:100%;
+}
+
